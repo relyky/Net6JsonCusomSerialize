@@ -7,8 +7,9 @@
 
 # 為了特殊的應用 JSON 序列化應用
 情境：原本欄位名稱為英文，改成序列化成中文名稱。   
-規格：客製 JSON 序列化時，欄位名稱改取自 DispalyNameAttribute 指定的欄位名稱。
-實作時發現 System.Text.Json 客製化能做的太有限。只好改用 Newtonsoft.Json 果然立馬滿足。Newtonsoft.Json 紅了這麼多年是有理由的。
+規格：客製 JSON 序列化時，欄位名稱改取自 DispalyNameAttribute 指定的欄位名稱。   
+實作時發現 System.Text.Json 客製化能做的太有限。只好改用 Newtonsoft.Json 果然立馬滿足。Newtonsoft.Json 紅了這麼多年是有理由的。   
+關鍵原始碼：[JsonHelper.cs](JsonHelper.cs)
 
 ### 一般 JSON 序列化
 ```JSON
